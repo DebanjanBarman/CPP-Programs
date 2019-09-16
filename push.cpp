@@ -7,9 +7,6 @@ int item;
 if(top== MAXSIZE-1){
 
 cout<<"The Stack is full";
-getch();
-exit(0);
-
 }
 else{
 
