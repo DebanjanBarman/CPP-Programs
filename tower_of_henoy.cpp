@@ -15,10 +15,10 @@ int main() {
 }
 void towers(int num, char frompeg, char topeg, char auxpeg) {
     if (num == 1) {
-        cout << " Move disk 1 from peg " << frompeg << " to peg " << topeg << endl;
+        cout << " Move disk 1 from  " << frompeg << " to  " << topeg << endl;
         return;
     }
     towers(num - 1, frompeg, auxpeg, topeg);
-    cout << " Move disk " << num << " from peg " << frompeg << " to peg " << topeg << endl;
+    cout << " Move disk " << num << " from  " << frompeg << " to  " << topeg << endl;
     towers(num - 1, auxpeg, topeg, frompeg);
 }

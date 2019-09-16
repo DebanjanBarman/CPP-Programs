@@ -9,7 +9,7 @@ int main(){
     cout<<"Enter number of disk\n";
     cin>>n;
 
-    cout<<"moves are\n";
+    cout<<"_____Moves are_____\n";
     TOH(n,'A','B','C');
     return 0 ;
 }
