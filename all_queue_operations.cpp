@@ -37,7 +37,7 @@ int main() {
 
 int enqueue(){
 
-    if(rear==MAX-1){
+    if(rear==MAX){
         cout<<"Queue is Full\n";
     }
     else
