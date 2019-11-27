@@ -35,4 +35,34 @@ for (i = 0; i < n; i++)
 }
 
 
+int beg=0, end= n-1, mid=(beg+end)/2, item;
+
+cout<<"Enter The Item\n";
+cin>>item;
+
+
+while (beg<=end)
+{
+  if (array[mid]<item)
+  {
+    beg=mid+1;
+  }
+  else if(array[mid==item]){
+
+    cout<<"Item found at "<<mid+1<<endl;
+    break;
+
+  }
+  else
+  {
+    end=mid-1;
+  }
+  mid=(beg+end)/2;
+  
+}
+if (beg>end)
+{
+  cout<<"item not found\n";
+}
+
 }
