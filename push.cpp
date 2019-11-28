@@ -1,20 +1,67 @@
-#include<iostream>
+#include <iostream>
+
 using namespace std;
 
-void push(){
+#define MAX 10
 
-int item;
-if(top== MAXSIZE-1){
+int push();
+int display();
 
-cout<<"The Stack is full";
+int top = -1, stack[MAX];
+
+int main()
+{
+    int opt;
+    while (1)
+    {
+        cout << "\n_____Stack Menu_____\n1 for push\n2 for display\n3 for exit\n\n";
+        cin >> opt;
+
+        switch (opt)
+        {
+        case 1:
+            push();
+            break;
+        case 2:
+            display();
+            break;
+        case 3:
+            exit;
+            break;
+
+        default:
+            break;
+        }
+    }
 }
-else{
 
-cout<<"Enter the element to be inserted: ";
-cin>>item;
-
-top+=1;
-stack[top] = item;
+int push()
+{
+    int val;
+    if (top == MAX - 1)
+    {
+        cout << "Stack full\n";
+    }
+    else
+    {
+        cout << "Enter element\n";
+        top += 1;
+        cin >> top;
+    }
 }
 
+int display()
+{
+    int i;
+    if (top == -1)
+    {
+        cout << "Stack is empty\n";
+    }
+    else
+    {
+        for (i = top; i >= 0; i--)
+        {
+            cout << stack[i];
+        }
+    }
 }
